@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: blac;
+    background-size: cover;
+}
+   
+.img{
+    height: 10px;
+    width: 10px;
+}
+.one{
+    text-align: center;
+    background-color: green;
+    box-shadow: 10px 10px 10px 10px red;
+    
+}
+ .one ul{
+    display: inline-flex;
+    list-style-type: none;
+    color: black;
+}
+ .one ul li{
+    width: 100px;
+    margin: 15px;
+}
+.one ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: medium;
+}
+
+.two{
+    display: none;
+}
+
+ul li a.active{
+    color: white;
+}
+ul li a:hover:not(.active){
+    color: white;
+}
+
+.one ul li:hover .two{
+    display: block;
+    position: absolute;
+    background-color: grey;
+}
+.one li:hover .two ul{
+    display: block;
+}
+
+.one li:hover .two li:hover{
+    background-color: brown;
+    color: black;
+    text-decoration: none;
+}
+
+.three{
+    display: none;
+}
+.one ul li:hover .three{
+    display: block;
+    position: absolute;
+    background-color: grey;
+}
+.one li:hover .three ul{
+    display: block;
+}
+
+.one li:hover .three li:hover{
+    background-color: brown;
+    color: black;
+    text-decoration: none;
+}
+
+
+.carousel-container {
+    position: relative;
+    max-width: 300px;
+    margin: 40px;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card{
+    width:325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0px 2px 4px lightseagreen;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding: 5%;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color: #666;
+    font-size: 15px;
+}
+.lastbar{
+    margin-left: 50px;
+    
+}
+.lastbar a{
+    display: inline-flex;
+    padding: 20px;
+    text-decoration: none;
+    color: darkkhaki;
+    background-color: red;
+    width: 100px;
+}
+.lastbar a:hover{
+    background-color: blue;
+    color: white;
+}

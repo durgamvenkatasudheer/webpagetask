@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>simple web design</title>
+    <link rel="stylesheet" href="style-task3.css">
+</head>
+<body>
+    <div class="one">
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Hill stations</a>
+                <div class="two">
+                    <ul>
+                        <li><a href="#">munnar</a></li>
+                        <li><a href="#">kodikanal</a></li>
+                        <li><a href="#">ooty</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">bestoffers</a>
+                <div class="three">
+                    <ul>
+                        <li><a href="#">familycombo</a></li>
+                        <li><a href="#">studentsoffer</a></li>
+                        <li><a href="#">specialoffer</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li class="img">
+                <img src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?size=338&ext=jpg&ga=GA1.1.2116175301.1718236800&semt=ais_user"width="40px"height="35px">
+            </li>
+        </ul>
+        </div>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel">
+          <img src="https://img.freepik.com/free-photo/view-travel-items-assortment-still-life_23-2149617645.jpg" alt="Image 1">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv2cdia1UBy2paWj4LqT4Pv95hrLzpUtuzGA&s" alt="Image 2">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo7cMlrfcug9kaCE8OLvhhY0y1fqwrufRFPg&s" alt="Image 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      
+      <script>
+        const carousel = document.querySelector('.carousel');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    
+    let counter = 0;
+    nextBtn.addEventListener('click', () => {
+  counter++;
+  carousel.style.transform = `translateX(-${counter * 100}%)`;
+});
+
+prevBtn.addEventListener('click', () => {
+  if (counter > 0) {
+    counter--;
+    carousel.style.transform = `translateX(-${counter * 100}%)`;
+  }
+});
+
+  </script>
+  <div class="card-container">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK4CYRZ8ywvB2LlPKMlDs4mj2uEiFPLZPwNw&s">
+        <div class="card-content">
+            <h3>card 1</h3>
+            <p>Travel vlogs are a really cool way for you to share your experiences with viewers in a creative and dynamic way.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlBjrAxABkWHnje5Wo-xKcWNFVCjEmiE912g&s">
+        <div class="card-content">
+            <h3>card 2</h3>
+            <p>Travel vlogs are a really cool way for you to share your experiences with viewers in a creative and dynamic way.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFOvnPjsR2tIC_mustuVMtxCdZ2_7f9F8Yyg&s">
+        <div class="card-content">
+            <h3>card 3</h3>
+            <p>Travel vlogs are a really cool way for you to share your experiences with viewers in a creative and dynamic way.</p>
+        </div>
+    </div>
+  </div>
+  <div class="lastbar">
+    <a href="#">Questions</a>
+    <a href="#">Settings</a>
+    <a href="#">More</a>
+  </div>
+</body>
+</html>
